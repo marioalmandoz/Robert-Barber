@@ -819,15 +819,15 @@
             <p class="text-xl text-on-surface mb-1 font-medium">60-29 Myrtle Ave</p>
             <p class="text-on-surface-variant">Ridgewood, NY 11385, USA</p>
           </div>
-          <div class="aspect-video w-full rounded-lg overflow-hidden relative border border-outline-variant/20 grayscale contrast-125">
-            <img class="w-full h-full object-cover"
-              alt="Stylized map showing the urban grid of Ridgewood Queens"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuOJxW_kCGelhtujWkMh-NcwPjjSg-iv4RYbtX8kHfcBah0mWESIbAfYIAhZynk3AooGpdR472cSv4K1xg0qDBndUNTbUn94sNywqD9KlVP8tdeIgYQHKZO0UUQNHo5sd7In5sbq-IQIWOIDMsI_MWYaHO3svZfvBahI3TrCalrUmzhP93q0CkNXR97pmFh3zet_3MNDYa1r4Kuj6PwUhHmGp-butqnPFTRlYyoqgtZlSCoShgGnzr4gG79H6aom5g9uqs3mjudPI"/>
-            <div class="absolute inset-0 bg-primary/10 pointer-events-none"></div>
-            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-              <div class="w-4 h-4 bg-primary rounded-full animate-ping absolute"></div>
-              <div class="w-4 h-4 bg-primary rounded-full"></div>
-            </div>
+          <div class="aspect-video w-full rounded-lg overflow-hidden border border-outline-variant/20">
+            <iframe
+              src="https://maps.google.com/maps?q=60-29+Myrtle+Ave,+Ridgewood,+NY+11385&output=embed&z=16"
+              width="100%" height="100%"
+              style="border:0; display:block; filter: grayscale(0.3) contrast(1.1);"
+              allowfullscreen loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Roberth.D Barbershop — 60-29 Myrtle Ave, Ridgewood NY">
+            </iframe>
           </div>
         </div>
       </div>
@@ -875,18 +875,22 @@
 
     <div class="relative" id="location-mobile">
       <div class="absolute inset-0 bg-primary/10 rounded-xl translate-x-3 translate-y-3 -z-10"></div>
-      <div class="h-72 bg-surface-container rounded-xl overflow-hidden shadow-2xl relative">
-        <img class="w-full h-full object-cover grayscale opacity-50 contrast-125"
-          alt="Abstract architectural map view of Ridgewood New York streets"
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuClKtoJqdlPWQim3X1K1-7mmhjZz2Z1j6kr1dS5L1rhmL6spoRXrUHe64tf0-Zbn6alucuO-hAV2IDaEOomThX9dldelrSSelVTMMHs6SbOIzoQpDoPsveJsKXbBIooa19DVOiviJfXhESrA6Dfnfz-wP1dRFhILpyzpfOcv38HZLcKdMwfD4lEuJ6TFnfEye40dLqMlqFani5voucj6EZy5RjnYSDGg2uoZ_HcJxBVI9n6aUdvAAToDFHTBHjs67-TijJV2GXV9q0"/>
-        <div class="absolute inset-0 flex items-center justify-center">
-          <div class="bg-surface-container-lowest p-5 rounded-xl border border-primary/20 text-center shadow-2xl">
-            <span class="material-symbols-outlined text-primary text-4xl mb-1 block" style="font-variation-settings: 'FILL' 1;">home_pin</span>
-            <p class="font-serif italic text-lg text-on-surface">We are here</p>
-            <button class="mt-3 text-xs tracking-widest uppercase text-primary font-bold hover:underline">Get Directions</button>
-          </div>
-        </div>
+      <div class="h-72 rounded-xl overflow-hidden shadow-2xl border border-outline-variant/20">
+        <iframe
+          src="https://maps.google.com/maps?q=60-29+Myrtle+Ave,+Ridgewood,+NY+11385&output=embed&z=16"
+          width="100%" height="100%"
+          style="border:0; display:block; filter: grayscale(0.2);"
+          allowfullscreen loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Roberth.D Barbershop — 60-29 Myrtle Ave, Ridgewood NY">
+        </iframe>
       </div>
+      <a href="https://www.google.com/maps/dir/?api=1&destination=60-29+Myrtle+Ave,+Ridgewood,+NY+11385"
+        target="_blank" rel="noopener"
+        class="mt-4 flex items-center gap-2 text-primary label-engraved text-xs hover:opacity-70 transition-opacity">
+        <span class="material-symbols-outlined text-sm">open_in_new</span>
+        Cómo llegar
+      </a>
     </div>
   </section>
 
