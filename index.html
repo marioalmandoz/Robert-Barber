@@ -65,7 +65,7 @@
   "servesCuisine": null,
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
-    "name": "Servicios de Barbería",
+    "name": "Barbershop Services",
     "itemListElement": [
       {
         "@type": "Offer",
@@ -82,7 +82,7 @@
         "itemOffered": {
           "@type": "Service",
           "name": "Cut + Beard",
-          "description": "El paquete completo para el caballero moderno."
+          "description": "The complete package for the modern gentleman."
         },
         "price": "40",
         "priceCurrency": "USD"
@@ -92,7 +92,7 @@
         "itemOffered": {
           "@type": "Service",
           "name": "Kids' Cut",
-          "description": "Experiencia amigable para los más pequeños."
+          "description": "A friendly experience for the little ones."
         },
         "price": "20",
         "priceCurrency": "USD"
@@ -102,7 +102,7 @@
         "itemOffered": {
           "@type": "Service",
           "name": "Beard Trim",
-          "description": "Perfilado, hidratación y cuidado experto."
+          "description": "Expert lining, hydration and grooming care."
         },
         "price": "20",
         "priceCurrency": "USD"
@@ -589,7 +589,7 @@
                     </div>
                     <div>
                       <p class="font-bold text-sm text-on-surface">Cut + Beard</p>
-                      <p class="text-xs text-primary label-engraved">Más popular · 75 min</p>
+                      <p class="text-xs text-primary label-engraved">Most popular · 75 min</p>
                     </div>
                   </div>
                   <div class="text-right flex items-center gap-3">
@@ -1100,7 +1100,7 @@
   function bkRenderMiniSummary() {
     var el = document.getElementById('bk-mini-summary');
     if (bk.step <= 1) { el.innerHTML = ''; return; }
-    var html = '<p class="label-engraved text-[10px] text-primary mb-3">Tu selección</p>';
+    var html = '<p class="label-engraved text-[10px] text-primary mb-3">Your selection</p>';
     if (bk.service) html += '<div><p class="label-engraved text-[10px] text-on-surface-variant">Servicio</p><p class="text-xs font-bold text-on-surface mt-0.5">' + bk.service + '</p><p class="label-engraved text-[10px] text-primary">' + bk.price + ' · ' + bk.dur + '</p></div>';
     if (bk.day) {
       var d = new Date(bk.year, bk.month, bk.day);
@@ -1208,7 +1208,7 @@
     html += '<div class="grid grid-cols-3 sm:grid-cols-4 gap-2">';
     afternoon.forEach(function (s, i) { html += slotBtn(s, i + 6); });
     html += '</div>';
-    html += '<p class="label-engraved text-[10px] text-on-surface-variant/40 mt-4 text-center">Los slots en gris ya están reservados</p>';
+    html += '<p class="label-engraved text-[10px] text-on-surface-variant/40 mt-4 text-center">Grayed-out slots are already booked</p>';
 
     document.getElementById('bk-slots').innerHTML = html;
   }
